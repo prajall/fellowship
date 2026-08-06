@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 7: E-commerce Checkout Flow    </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="indicatorContainer">
+        <div class="indicator"></div>
+
+      </div>
+      <form id="step1" ">
+        <h2>Step 1: Contact Info</h2>
+        <label>
+          Name:
+          <input id="name" type="text" name="name" required/>
+        </label>
+        <label>
+          Email:
+          <input id="email" type="email" name="email" required />
+        </label>
+        <button type="submit">Next</button>
+      </form>
+
+      <form id="step2">
+        <h2>Step 2: Shipping Address</h2>
+        <label>
+          Address:
+          <input id="address" type="text" name="address" required />
+        </label>
+        <label>
+          City:
+          <input id="city" type="text" name="city" required />
+        </label>
+        <label>
+          Postal Code:
+          <input id="postal" type="text" name="postal" required />
+        </label>
+        <button type="button" class="back">Back</button>
+        <button  type="submit">Next</button>
+      </form>
+
+      <form id="step3">
+        <h2>Step 3: Payment Method</h2>
+        <div class="input-container">
+          <label>
+            <input id="payment-card" type="radio" name="payment" value="card" required />
+            <span>Credit / Debit Card
+          </label>
+          <label>
+            <input id="payment-esewa" type="radio" name="payment" value="cod" required />
+            Esewa
+          </label
+        </div>
+      </div>
+
+        <div class="flex">
+          <button type="button" class="back">Back</button>
+          <button type="submit">Submit Order</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
